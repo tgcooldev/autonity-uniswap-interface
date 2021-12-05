@@ -1,7 +1,23 @@
 import * as chains from './chains';
 
 // If you add coins for a new network, make sure Weth address (for the router you are using) is the first entry
-
+const TGCOOLCoins = [
+  {
+    name: "Ether",
+    abbr: "ETH",
+    address: "", // Weth address is fetched from the router
+  },
+  {
+    name: " onTgcool Dai",
+    abbr: "DAI",
+    address: "0xaa7f803F0BC52b3A2B1F85b1b41385Db10a1e5d0",
+  },
+  {
+    name: "onTgcool Tether USD",
+    abbr: "USDT",
+    address: "0xaa7f803F0BC52b3A2B1F85b1b41385Db10a1e5d0",
+  },
+]
 const AUTONITYCoins = [
   {
     name: "Auton",
