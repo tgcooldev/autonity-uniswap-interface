@@ -279,7 +279,7 @@ function CoinSwapper(props) {
       }
 
       if (coin1.address && account &&!wrongNetworkOpen) {
-        getBalanceAndSymbol(account, coin1.address, provider, signer, weth.address, coins).then(
+        getBalanceAndSymbol(account, coin1.address, provider, signer, '0xE1DBa9e8b071240Fab022fDf70Aea6Fd74C5233b', coins).then(
           (data) => {
             setCoin1({
               ...coin1,
@@ -289,7 +289,7 @@ function CoinSwapper(props) {
         );
       }
       if (coin2.address && account &&!wrongNetworkOpen) {
-        getBalanceAndSymbol(account, coin2.address, provider, signer, weth.address, coins).then(
+        getBalanceAndSymbol(account, coin2.address, provider, signer, '0xE1DBa9e8b071240Fab022fDf70Aea6Fd74C5233b', coins).then(
           (data) => {
             setCoin2({
               ...coin2,
