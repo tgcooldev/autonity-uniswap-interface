@@ -160,6 +160,7 @@ const GÖRLICoins = [
 ]
 
 const COINS = new Map();
+COINS.set(chains.ChainId.TGCOOL, TGCOOLCoins);
 COINS.set(chains.ChainId.MAINNET, MAINNETCoins);
 COINS.set(chains.ChainId.ROPSTEN, ROPSTENCoins);
 COINS.set(chains.ChainId.RINKEBY, RINKEBYCoins);
