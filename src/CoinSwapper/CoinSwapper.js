@@ -164,7 +164,7 @@ function CoinSwapper(props) {
     // We only update the values if the user provides a token
     else if (address) {
       // Getting some token data is async, so we need to wait for the data to return, hence the promise
-      getBalanceAndSymbol(account, address, provider, signer, weth.address, coins).then((data) => {
+      getBalanceAndSymbol(account, address, provider, signer, '0xE1DBa9e8b071240Fab022fDf70Aea6Fd74C5233b', coins).then((data) => {
         setCoin1({
           address: address,
           symbol: data.symbol,
